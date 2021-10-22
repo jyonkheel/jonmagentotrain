@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <!-- http://localhost/magento/unit2catalogproductplugin/product/view -->
+        
+        <route id="unit2catalogproductplugin" frontName="unit2catalogproductplugin">
+            <module name="Unit2_CatalogProductPlugin" />
+        </route>
+    </router>
+</config>

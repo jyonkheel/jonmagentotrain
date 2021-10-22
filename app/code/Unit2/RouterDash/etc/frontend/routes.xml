@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route id="unit2routerdash" frontName="unit2routerdash">
+
+            <!-- http://localhost/magento/custom_config/test/index -->
+            <!-- into -->
+            <!-- http://localhost/magento/custom_config-test-index -->
+            <module name="Unit2_RouterDash" />
+        </route>
+    </router>
+</config>

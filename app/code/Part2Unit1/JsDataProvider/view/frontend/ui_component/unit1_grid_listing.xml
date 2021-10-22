@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+
+    <!-- This technique is only for educational purpose! Don’t use it in production code! -->
+    <htmlContent name="unit1">
+        <argument name="block" xsi:type="object">Magento\Framework\View\Element\Template</argument>
+        <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="provider" xsi:type="string">unit1_grid_listing.unit1_grid_listing_data_source</item>
+                <item name="component" xsi:type="string">Part2Unit1_JsDataProvider/js/data</item>
+                <item name="template" xsi:type="string">Part2Unit1_JsDataProvider/index</item>
+            </item>
+        </argument>
+    </htmlContent>
+    <!-- This technique is only for educational purpose! Don’t use it in production code! -->
+
+    <dataSource name="unit1_grid_listing_data_source" component="Magento_Ui/js/grid/provider">
+        <settings>
+            <updateUrl path="mui/index/render"/>
+        </settings>
+        <dataProvider class="Part2Unit1\JsDataProvider\Model\DataProvider" name="unit1_grid_listing_data_source">
+            <settings>
+                <requestFieldName>id</requestFieldName>
+                <primaryFieldName>grid_id</primaryFieldName>
+            </settings>
+        </dataProvider>
+    </dataSource>
+</listing>

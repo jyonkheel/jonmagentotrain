@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Part2Unit2_ComputerGames::grid" title="PC Games" module="Part2Unit2_ComputerGames"
+             parent="Magento_Catalog::catalog" resource="Part2Unit2_ComputerGames::grid"
+             sortOrder="0" action="games/game/index"/>
+    </menu>
+</config>

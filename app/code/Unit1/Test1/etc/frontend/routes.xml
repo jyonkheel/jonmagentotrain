@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+
+        <!-- http://localhost/magento/custom_config/test/index -->
+
+        <route id="custom_config" frontName="custom_config">
+            <module name="Unit1_Test1"/>
+        </route>
+    </router>
+</config>

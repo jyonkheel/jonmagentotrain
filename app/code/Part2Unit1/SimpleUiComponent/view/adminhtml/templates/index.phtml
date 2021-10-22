@@ -1,0 +1,16 @@
+<div data-bind="scope: 'simple-component'">
+    <div data-bind="text: simple"></div>
+</div>
+<script type="text/x-magento-init">
+   {
+       "*": {
+           "Magento_Ui/js/core/app": {
+               "components": {
+                   "simple-component": {
+                       "component": "Part2Unit1_SimpleUiComponent/js/module"
+                   }
+               }
+           }
+       }
+   }
+</script>

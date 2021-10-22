@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="custom_layout">
+            <arguments>
+                <argument name="background_color" xsi:type="string">#000</argument>
+                <argument name="color" xsi:type="string">orange</argument>
+            </arguments>
+        </referenceBlock>
+
+
+        <referenceBlock name="header.links">
+            <block class="Magento\Framework\View\Element\Html\Link" name="test-link">
+            <arguments>
+                <argument name="label" xsi:type="string" translate="true">Test
+                Link1</argument>
+                <argument name="path" xsi:type="string"
+                translate="true">testlink1</argument>
+            </arguments>
+            </block>
+        </referenceBlock>
+    </body>
+</page>
